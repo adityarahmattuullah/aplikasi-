@@ -1,0 +1,165 @@
+/* Body */
+body {
+  background-color: #f8f9fd;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #0b1c36;
+  height: 100vh;
+  position: fixed;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar h3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Menu Buttons */
+.sidebar .menu-btn {
+  width: 85%;
+  padding: 12px 18px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: #d1d7e0;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.sidebar .menu-btn:hover {
+  background-color: #12345e;
+  color: white;
+}
+
+/* Active menu */
+.sidebar .active {
+  background-color: #006aff;
+  color: white;
+}
+
+/* Content area */
+.content {
+  margin-left: 250px;
+  padding: 40px 50px;
+}
+
+/* Card form box */
+.card-custom {
+  background: white;
+  padding: 30px 40px;
+  max-width: 500px;
+  border-radius: 12px;
+  border: 1px solid #e4e8f0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+/* Header title */
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a2c4e;
+  margin-bottom: 20px;
+}
+
+/* Form labels */
+label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Input styling */
+.form-control,
+.form-select {
+  padding: 12px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #bbc5d4;
+  font-size: 14px;
+}
+
+/* Button primary */
+.btn-save {
+  background-color: #006aff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-save:hover {
+  background-color: #0052c9;
+}
+
+/* Table box container */
+.table-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  border: 1px solid #e4e8f0;
+}
+
+/* Table style */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead tr {
+  background-color: #006aff !important;
+  color: white;
+}
+
+table th, table td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+/* Badge */
+.badge-pass {
+  background-color: #08c426;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.badge-fail {
+  background-color: #d80000;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .card-custom {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Input Nilai Mahasiswa</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ✅ SIDEBAR -->
+<div class="sidebar">
+  <h3>PORTAL AKADEMIK</h3>
+  <button class="menu-btn active">Input Nilai</button>
+  <a href="view.html"><button class="menu-btn">Lihat Data Nilai</button></a>
+</div>
+
+<!-- ✅ CONTENT -->
+<div class="content">
+    <h2 class="page-title">Formulir input nilai</h2>
+
+    <div class="card-custom mx-auto">
+        <form id="formNilai">
+
+            <label>Nama Lengkap</label>
+            <input type="text" id="nama" class="form-control mb-3" placeholder="Masukkan nama lengkap" required>
+
+            <label>NIM</label>
+            <input type="text" id="nim" class="form-control mb-3" placeholder="Contoh: 20231001" required>
+
+            <label>Mata Kuliah</label>
+            <select id="matkul" class="form-select mb-3" required>
+                <option value="">Pilih Mata Kuliah...</option>
+                <option>Manajemen Resiko</option>
+                <option>Multimedia</option>
+                <option>Pemrograman Mobile</option>
+                <option>Rekayasa Perangkat Lunak</option>
+                <option>Technopreneurship</option>
+                <option>Testing dan Implementasi System</option>
+            </select>
+
+            <label>Nilai</label>
+            <input type="number" id="nilai" class="form-control mb-4" placeholder="Contoh: 85.5" required>
+
+            <button class="btn-save" type="submit">Simpan Data</button>
+        </form>
+    </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
